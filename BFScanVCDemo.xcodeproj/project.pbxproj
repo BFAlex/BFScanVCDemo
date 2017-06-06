@@ -15,6 +15,8 @@
 		A873B2571EE554E90044A38E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A873B2551EE554E90044A38E /* LaunchScreen.storyboard */; };
 		A873B2621EE554E90044A38E /* BFScanVCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A873B2611EE554E90044A38E /* BFScanVCDemoTests.m */; };
 		A873B26D1EE554E90044A38E /* BFScanVCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A873B26C1EE554E90044A38E /* BFScanVCDemoUITests.m */; };
+		A873B27C1EE555A10044A38E /* BFScanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A873B27B1EE555A10044A38E /* BFScanVC.xib */; };
+		A873B27F1EE5563A0044A38E /* BFScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A873B27E1EE5563A0044A38E /* BFScanVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		A873B2681EE554E90044A38E /* BFScanVCDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFScanVCDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A873B26C1EE554E90044A38E /* BFScanVCDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFScanVCDemoUITests.m; sourceTree = "<group>"; };
 		A873B26E1EE554E90044A38E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A873B27B1EE555A10044A38E /* BFScanVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFScanVC.xib; sourceTree = "<group>"; };
+		A873B27D1EE5563A0044A38E /* BFScanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFScanVC.h; sourceTree = "<group>"; };
+		A873B27E1EE5563A0044A38E /* BFScanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFScanVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		A873B2461EE554E90044A38E /* BFScanVCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A873B27A1EE555750044A38E /* BFScanVC */,
 				A873B24A1EE554E90044A38E /* AppDelegate.h */,
 				A873B24B1EE554E90044A38E /* AppDelegate.m */,
 				A873B24D1EE554E90044A38E /* ViewController.h */,
@@ -138,6 +144,16 @@
 				A873B26E1EE554E90044A38E /* Info.plist */,
 			);
 			path = BFScanVCDemoUITests;
+			sourceTree = "<group>";
+		};
+		A873B27A1EE555750044A38E /* BFScanVC */ = {
+			isa = PBXGroup;
+			children = (
+				A873B27B1EE555A10044A38E /* BFScanVC.xib */,
+				A873B27D1EE5563A0044A38E /* BFScanVC.h */,
+				A873B27E1EE5563A0044A38E /* BFScanVC.m */,
+			);
+			path = BFScanVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +268,7 @@
 				A873B2571EE554E90044A38E /* LaunchScreen.storyboard in Resources */,
 				A873B2541EE554E90044A38E /* Assets.xcassets in Resources */,
 				A873B2521EE554E90044A38E /* Main.storyboard in Resources */,
+				A873B27C1EE555A10044A38E /* BFScanVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +296,7 @@
 				A873B24F1EE554E90044A38E /* ViewController.m in Sources */,
 				A873B24C1EE554E90044A38E /* AppDelegate.m in Sources */,
 				A873B2491EE554E90044A38E /* main.m in Sources */,
+				A873B27F1EE5563A0044A38E /* BFScanVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2J5C844G24;
 				INFOPLIST_FILE = BFScanVCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFScanVCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2J5C844G24;
 				INFOPLIST_FILE = BFScanVCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFScanVCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BFScanVC.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)enterScanVC:(UIButton *)sender {
+    BFScanVC *scanVC = [BFScanVC scanVCWithDescription:@"扫描二维码"];
+    [self.navigationController pushViewController:scanVC animated:YES];
 }
-
 
 @end
