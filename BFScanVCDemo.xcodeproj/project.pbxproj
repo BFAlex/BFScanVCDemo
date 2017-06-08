@@ -17,6 +17,8 @@
 		A873B26D1EE554E90044A38E /* BFScanVCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A873B26C1EE554E90044A38E /* BFScanVCDemoUITests.m */; };
 		A873B27C1EE555A10044A38E /* BFScanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A873B27B1EE555A10044A38E /* BFScanVC.xib */; };
 		A873B27F1EE5563A0044A38E /* BFScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A873B27E1EE5563A0044A38E /* BFScanVC.m */; };
+		A873B2A51EE948400044A38E /* BFScanEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A873B2A41EE948400044A38E /* BFScanEditVC.xib */; };
+		A873B2A81EE948520044A38E /* BFScanEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A873B2A71EE948520044A38E /* BFScanEditVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		A873B27B1EE555A10044A38E /* BFScanVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFScanVC.xib; sourceTree = "<group>"; };
 		A873B27D1EE5563A0044A38E /* BFScanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFScanVC.h; sourceTree = "<group>"; };
 		A873B27E1EE5563A0044A38E /* BFScanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFScanVC.m; sourceTree = "<group>"; };
+		A873B2A41EE948400044A38E /* BFScanEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFScanEditVC.xib; sourceTree = "<group>"; };
+		A873B2A61EE948520044A38E /* BFScanEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFScanEditVC.h; sourceTree = "<group>"; };
+		A873B2A71EE948520044A38E /* BFScanEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFScanEditVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +157,9 @@
 				A873B27B1EE555A10044A38E /* BFScanVC.xib */,
 				A873B27D1EE5563A0044A38E /* BFScanVC.h */,
 				A873B27E1EE5563A0044A38E /* BFScanVC.m */,
+				A873B2A41EE948400044A38E /* BFScanEditVC.xib */,
+				A873B2A61EE948520044A38E /* BFScanEditVC.h */,
+				A873B2A71EE948520044A38E /* BFScanEditVC.m */,
 			);
 			path = BFScanVC;
 			sourceTree = "<group>";
@@ -268,6 +276,7 @@
 				A873B2571EE554E90044A38E /* LaunchScreen.storyboard in Resources */,
 				A873B2541EE554E90044A38E /* Assets.xcassets in Resources */,
 				A873B2521EE554E90044A38E /* Main.storyboard in Resources */,
+				A873B2A51EE948400044A38E /* BFScanEditVC.xib in Resources */,
 				A873B27C1EE555A10044A38E /* BFScanVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A873B24F1EE554E90044A38E /* ViewController.m in Sources */,
+				A873B2A81EE948520044A38E /* BFScanEditVC.m in Sources */,
 				A873B24C1EE554E90044A38E /* AppDelegate.m in Sources */,
 				A873B2491EE554E90044A38E /* main.m in Sources */,
 				A873B27F1EE5563A0044A38E /* BFScanVC.m in Sources */,
@@ -536,6 +546,7 @@
 				A873B2731EE554E90044A38E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A873B2741EE554E90044A38E /* Build configuration list for PBXNativeTarget "BFScanVCDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +555,7 @@
 				A873B2761EE554E90044A38E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A873B2771EE554E90044A38E /* Build configuration list for PBXNativeTarget "BFScanVCDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +564,7 @@
 				A873B2791EE554E90044A38E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

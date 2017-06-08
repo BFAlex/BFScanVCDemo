@@ -88,8 +88,11 @@
                             <constraint firstAttribute="height" constant="64" id="ua8-m5-zjB"/>
                         </constraints>
                     </view>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="8Qf-ro-tNy">
+                        <rect key="frame" x="177" y="323" width="20" height="20"/>
+                    </activityIndicatorView>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="btE-LM-keY" secondAttribute="trailing" id="2gR-Kh-fCL"/>
                     <constraint firstItem="W3A-qj-qXO" firstAttribute="leading" secondItem="lgA-I3-Qbx" secondAttribute="leading" id="49Q-jW-qhF"/>
@@ -97,12 +100,14 @@
                     <constraint firstItem="W3A-qj-qXO" firstAttribute="trailing" secondItem="lgA-I3-Qbx" secondAttribute="trailing" id="Dhq-al-wf5"/>
                     <constraint firstItem="SKF-c4-Kqs" firstAttribute="top" secondItem="lgA-I3-Qbx" secondAttribute="bottom" constant="20" id="GS3-wE-xVB"/>
                     <constraint firstItem="SKF-c4-Kqs" firstAttribute="leading" secondItem="lgA-I3-Qbx" secondAttribute="leading" id="Gnu-rW-jBb"/>
+                    <constraint firstItem="8Qf-ro-tNy" firstAttribute="centerX" secondItem="Dxp-FN-dnj" secondAttribute="centerX" id="MVZ-ac-KR1"/>
                     <constraint firstItem="btE-LM-keY" firstAttribute="top" secondItem="eti-sb-D5n" secondAttribute="bottom" constant="-20" id="SlO-1c-i7e"/>
                     <constraint firstItem="lgA-I3-Qbx" firstAttribute="centerY" secondItem="Dxp-FN-dnj" secondAttribute="centerY" id="arI-21-FX0"/>
                     <constraint firstAttribute="trailing" secondItem="lgA-I3-Qbx" secondAttribute="trailing" constant="16" id="btk-nW-foQ"/>
                     <constraint firstItem="W3A-qj-qXO" firstAttribute="top" secondItem="lgA-I3-Qbx" secondAttribute="top" constant="20" id="g0T-1f-MOp"/>
                     <constraint firstItem="lgA-I3-Qbx" firstAttribute="leading" secondItem="Dxp-FN-dnj" secondAttribute="leading" constant="16" id="hoN-Lb-6is"/>
                     <constraint firstItem="lgA-I3-Qbx" firstAttribute="centerX" secondItem="Dxp-FN-dnj" secondAttribute="centerX" id="imJ-03-rKS"/>
+                    <constraint firstItem="8Qf-ro-tNy" firstAttribute="centerY" secondItem="Dxp-FN-dnj" secondAttribute="centerY" id="s12-oe-73r"/>
                     <constraint firstItem="SKF-c4-Kqs" firstAttribute="trailing" secondItem="lgA-I3-Qbx" secondAttribute="trailing" id="xeb-cl-43o"/>
                 </constraints>
             </view>
@@ -114,6 +119,7 @@
                 <outlet property="scanFrame" destination="lgA-I3-Qbx" id="fV5-MD-IKQ"/>
                 <outlet property="scanLine" destination="W3A-qj-qXO" id="xqS-6d-WCV"/>
                 <outlet property="scanLineToTopConstraint" destination="g0T-1f-MOp" id="I0o-e5-fhz"/>
+                <outlet property="showPreparingView" destination="8Qf-ro-tNy" id="loI-mf-Hxg"/>
             </connections>
             <point key="canvasLocation" x="-417.5" y="85.5"/>
         </viewController>

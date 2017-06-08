@@ -20,7 +20,7 @@
 }
 
 - (IBAction)enterScanVC:(UIButton *)sender {
-    BFScanVC *scanVC = [BFScanVC scanVCWithDescription:@"扫描二维码"];
+    BFScanVC *scanVC = [BFScanVC scanVCWithDescription:@"请扫描书本背面条形码"];
     [self.navigationController pushViewController:scanVC animated:YES];
 }
 

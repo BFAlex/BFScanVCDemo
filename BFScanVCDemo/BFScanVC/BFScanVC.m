@@ -8,6 +8,7 @@
 
 #import "BFScanVC.h"
 #import <AVFoundation/AVFoundation.h>
+#import "BFScanEditVC.h"
 
 #define kBorderDistance  20
 #define kScanLineSpeed   3
@@ -31,6 +32,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *scanLineToTopConstraint;
 @property (weak, nonatomic) IBOutlet UIButton *barLeftBtn;
 @property (weak, nonatomic) IBOutlet UIButton *barRightBtn;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *showPreparingView;
 
 @end
 
@@ -41,10 +43,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setupNotification];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [self setupScanView];
+    self.showPreparingView.hidden = NO;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -78,6 +82,17 @@
 }
 
 #pragma mark - private
+
+- (void)setupNotification {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scanEditVCNoti:) name:@"ScanEditVCNotification" object:nil];
+}
+
+- (void)scanEditVCNoti:(NSNotification *)noti {
+    
+    NSString *code = [noti.userInfo objectForKey:@"Code"];
+    NSLog(@"code:%@", code);
+}
 
 - (void)setupData {
     // 扫描线
@@ -124,11 +139,13 @@
 
 - (void)clickRightBtn:(UIButton *)btn {
     NSLog(@"clicking right button...");
-    if (_scanTimer.isValid) {
-        [self stopScanAnimation];
-    } else {
-        [self startScanAnimation];
-    }
+//    if (_scanTimer.isValid) {
+//        [self stopScanAnimation];
+//    } else {
+//        [self startScanAnimation];
+//    }
+    BFScanEditVC *editVC = [[BFScanEditVC alloc] init];
+    [self.navigationController pushViewController:editVC animated:YES];
 }
 
 #pragma 摄像头
@@ -192,6 +209,7 @@
     [self.view.layer insertSublayer:_captureVideoPreviewLayer atIndex:0];
     
     [_captureSession startRunning];
+    self.showPreparingView.hidden = YES;
     
     return true;
 }
